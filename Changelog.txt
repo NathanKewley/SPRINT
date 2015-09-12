@@ -1,0 +1,137 @@
+*********ALPHA 11*********
+- SPRINT: Made CustomMap browser better
+- SPRINT: Browse, download and play maps from the map server
+- SPRINT: Fixed "Spiderman" bug
+- EDITOR: Fixed Text Entering bug's (set some characters as iligal ":", ";", etc)
+- EDITOR: Limited amount of character for MapName and MapAuthor
+- EDITOR: Added 1x zoom level now have: 1x, 2x, 4x
+- EDITOR: Load CustomMap browser from game used in editor now
+- EDITOR: can upload maps to the map server
+
+*********ALPHA 10*********
+- SPRINT: background repeats/tiles accross the whole level (no longer streaches it)
+- SPRINT: intermediate layer also repeats/tiles
+- SPRINT: Options screen controlled by keyboard
+- SPRINT: Custom Map Browser (browses and loads maps from the custom maps dir)
+- EDITOR: Right click and drag to remove multiple tiles at once
+- EDITOR: Saves MapName and MapAuthor to the .map file
+- EDITOR: Allows you to enter map name and author for maps you make
+- EDITOR: Saves/Loads maps from the "CustomMaps/" dir
+- MISC: ".map" Files now contain MapName and MapAuthor
+
+- UPDATED SFML FROM 1.6 TO 2.0.... caused side effects:
+	- can no longer view grid
+	- portal destination lines no longer draw
+	- Map Preview is not longer displayed when saving/loading maps
+
+**********ALPHA 9*********
+- SPRINT: 4 way gravity
+- SPRINT: new collision system due to the 4 way gravity *sigh*
+- SPRINT: press F1 to see the player collision dots is very cool and useful
+- SPRINT: when player goes outside of map by more than 200px level is reset
+- SPRINT: Jumping works for all gravity directions
+- SPRINT: real time variable edit (f12 to choose var, +/- to edit value)
+- SPRINT: scrolling background
+- SPRINT: Intermediate back scrolling layer prototype
+- EDITOR: Can place 4 gravity directional special's (up,down,left,right)
+- EDITOR: Improvements to the map preview screenshot
+- BAD: options screen mostly disfuntiant and has serious issues o.O
+
+**********ALPHA 8**********
+- SPRINT: Black background outside of level replaced with matching color
+- SPRINT: initial jetpack implementation (Space bar to activate)
+- SPRINT: lots of work on collision detection
+- SPRINT: Initial creation of splash-screen (really needs some pretty graphics)
+- SPRINT: Initial creation on level complete screen
+- SPRINT: Supports any res (uses desktop res for now)
+- SPRINT: Menu is now Navigated with keyboard arrows, enter/X to select
+- EDITOR: Auto-place "Blocked" (!) when tile image placed
+- EDITOR: "Blocked" (!) special now toggles
+- EDITOR: Supports any resolution (gets desktop res and uses that for now)
+- EDITOR: Remapping of controlls (press Q to display help/controls)
+- GRAPHICS: New menu image
+- GRAPHICS: new images for other player characters
+- GRAPHICS: 4 new tiles (inverted corners)
+- GRAPHICS: Editor controls/menu image updated
+- Misc: New mouse click detection system that functions at any res
+- Misc: update to Andrio's font
+
+**********ALPHA 7**********
+- SPRINT: Removed option to set the fps cap (permenetly at 60 now)
+- SPRINT: Tips are shown in game when the player walks over them
+- SPRINT: "Zoomed Out" the game
+- SPRINT: player can no longer jump in mid air
+- EDITOR: working Zoom in and out button's on side
+- EDITOR: Can place "tips" in the editor
+- GRAPHICS: new "special" images
+- MISC: improvments to level save/load structure
+- MISC: Fixed an accidental feature that would crash the game on map load
+
+**********ALPHA 6**********
+- Sprint: support for character selection implemented
+- Sprint: upon completing the last level a 'you win' screen is presented
+- Sprint: if the player reaches the edge of the map the level is restarted
+- Sprint: Options save to file when leaving the options screen
+- Sprint: Options load from file when game is initially started
+- Sprint: FPS is drawn to the screen and is limited to a max of 60fps
+- Sprint: you can turn showing FPS on or off from the options screen
+- Sprint: pressing esc in game pauses the game and shows the paused menu
+- Sprint: can select both exit and resume from paused menu (exit takes you to main menu)
+- Sprint: options can be changed during the game by selecting options from the paused menu (not on first level)
+- Sprint: when player is not moving player frame is set to standing still
+- Sprint: FPSLimit/MaxFPS can be set from the options menu (leave at 60 for now when playing)
+- SPRINT: Various improvments to dev mode (F6)
+- Editor: map previews in the editor when saving and loading
+- Editor: cant load map that does not exist (prevents crashing)
+- Editor: limited framerate to 60
+- Graphics: New tile images added
+- FileSystem: Moves source to /bin
+- FileSystem: Linux binary with statac libarys (Should run on any linux pc, not just mine)
+
+**********ALPHA 5**********
+- Editor only allows for there to be 1 player start (can be multiple end positions for now??)
+- can now place "tiles" and "special" in editor by left click and drag
+- PORTAL'S PORTAL'S PORTAL'S
+- GRAVITY increased by 50% (from 4 to 6)
+- Player jumping polished a little more (can jump furthur)
+- Collision detection is like perfect now
+- improvments and bug fixes to editor, portal placement also improved
+- fixed bug so player only shows 1 frame and dosent show the whole image when first map is loaded
+- upon finnishing the last map the game now returns to the menu (will later show a you win screen)
+- the jump velocity of the player is set to 0 after going through a portal (Player stops jumping) good/bad??
+- begginings of an 'Options' screen (So far no options can be viewed or set but the screen is accesable)
+
+**********ALPHA 4**********
+- rewrite of collision detection (almost perfect still needs some minor work)
+- Player can no longer jump through blocked tiles
+- Player can only jump if on the ground
+- Images loaded better and support 1x to 4x scale conversion (used by default)
+- no more blurry images ever again due to new loading functionality
+- F6 to toggle tile numbers and grid drawn on map for dev info
+- various editor improvments including better tile and special selection
+- Fully implemented screen for credits (just need andrew to make it pretty)
+
+**********ALPHA 3**********
+- Player collision with blocks in the world initial implementation (still a bit buggy)
+- Made a start to gravity
+- Furthur fixed blurry images (player, tiles and special tiles)
+- basic juming implementation complete (can however jump through tiles)
+- editor right click deletes tile now
+- View (Screen) now follows the player (is very fancy)
+- If player goes off the screen the level is restarted
+- Gravity can be toggled on the y axis (currently by pressing F5)
+- Gravity toggle tile, toggles gravity on the y axix when player collides with it
+- Jumping works with gravity both on and off
+
+**********ALPHA 2**********
+- Load Function implemented and working within the editor
+- Images no longer auto "Smooth" (prevents the pixel art from blurring)
+- Initial creation of Sprint game
+- functining menu for game
+- Game loads and displays maps
+- Player moves and animates (using a sptitesheet)
+- Next map is loaded when player reaches a tile with "special" holding value: "End" 
+
+**********ALPHA 1**********
+- initial creation of editor
+- editor has all basic function aside from loading
